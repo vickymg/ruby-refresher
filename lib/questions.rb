@@ -189,6 +189,9 @@ end
 # 'the lion the witch and the wardrobe' becomes
 # 'The Lion the Witch and the Wardrobe'
 def titleize_a_string(string)
+  conjunctions = ["a", "and", "the"]
+  string.capitalize.split(" ").map { |word|
+    conjunctions.include?(word)? word : word.capitalize}.join(' ')
 end
 
 # return true if a string contains any special characters

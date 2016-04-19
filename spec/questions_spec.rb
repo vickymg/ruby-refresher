@@ -220,4 +220,22 @@ describe 'the Friday test :)' do
     n = count_words_of_each_length_in_a_file('data/lorem.txt') || []
     expect(Hash[n.sort]).to eq({1=>1, 2=>5, 3=>7, 4=>12, 5=>14, 6=>4, 7=>8, 8=>6, 9=>6, 10=>2, 11=>2, 12=>3})
   end
+
+  describe 'fizzbuzz' do
+  	it 'returns "fizz" when passed 3' do
+  		expect(fizzbuzz_without_modulo(3)).to eq 'fizz'
+  	end
+
+  	it 'returns "buzz" when passed 5' do
+      expect(fizzbuzz_without_modulo(5)).to eq 'buzz'
+  	end
+
+  	it 'returns "fizzbuzz" when passed 15' do
+  		expect(fizzbuzz_without_modulo(15)).to eq 'fizzbuzz'
+  	end
+
+  	it 'returns number when passed 7' do
+  		expect(fizzbuzz_without_modulo(7)).to eq 7
+  	end
+  end
 end

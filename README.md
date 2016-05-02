@@ -1,3 +1,3 @@
 ## Ruby Refresher
 
-Exercises to revisit Ruby.
+Solutions to refresher exercises to revisit Ruby.
